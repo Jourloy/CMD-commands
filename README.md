@@ -1,4 +1,4 @@
-# CMD-commands
+![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/CMD-commands.png)
 ### Требования для работы:
 1. [Python 3.7+](https://www.python.org/downloads/)
 2. Windows 10
