@@ -1,4 +1,3 @@
-#Другие библеотеки
 import random
 import sys
 import os
