@@ -2,7 +2,14 @@
 1. [Python 3.8+](https://www.python.org/downloads/)
 2. Windows 10
 ____
-### Установка:
+### Установка (метод 1):
+1. Откройте CMD
+2. Перейдите в любую удобную для вас папку
+3. Введите `curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Install.bat >> install.bat`
+4. Появится файл **install.bat**. Запустите его от имени администратора
+5. Удалите **install.bat**
+____
+### Установка (метод 2):
 1. Скачайте репозиторий в ZIP архиве
 2. Распакуйте ZIP архив на диск **C:**!
 3. Переименуйте папку, чтобы название получилось **CMD-commands**
