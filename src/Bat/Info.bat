@@ -9,7 +9,6 @@ echo    Generate random password
 echo    login - login for site
 echo    save - if you want save type '1'
 echo    *Need PYTHON*
-echo 3. Speed [full]
+echo 3. Speed
 echo    Check your network speed
-echo    full - if you want get more info about type 'full'
 echo    *Need PYTHON*
