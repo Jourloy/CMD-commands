@@ -1,14 +1,44 @@
 @echo off
 title Info about JOURLOY's commands
 
-echo 1. Disable
-echo    Disable windows update and windows defender
-echo    *Without PYTHON*
-echo 2. Password count [login] [site] [save]
-echo    Generate random password
-echo    login - login for site
-echo    save - if you want save type '1'
-echo    *Need PYTHON*
-echo 3. Speed
-echo    Check your network speed
-echo    *Need PYTHON*
+if EXIST C:\CMD-commands\src\Bat\Update.bat (
+    echo ============================
+    echo [          UPDATE          ] 
+    echo ----------------------------
+    echo Tool for update or download tools
+    echo author: JOURLOY
+    echo command for launch: Update --all
+    echo command for get help: Update --help
+    echo command for download\update: Download --Update
+)
+if EXIST C:\CMD-commands\src\Bat\Disable.bat (
+    echo ============================
+    echo [         DISABLE          ] 
+    echo ----------------------------
+    echo Tool for disable windows update and windows defender
+    echo author: JOURLOY
+    echo command for launch: Disable
+    echo command for get help: Disable --help
+    echo command for download\update: Download --Disable
+)
+if EXIST C:\CMD-commands\src\Bat\Password.bat (
+    echo ============================
+    echo [         PASSWORD         ] 
+    echo ----------------------------
+    echo Tool for generate random password
+    echo author: JOURLOY
+    echo command for launch: Password count [login] [site] [save]
+    echo command for get saved passwords: Password --show
+    echo command for get help: Password --help
+    echo command for download\update: Download --Password
+)
+if EXIST C:\CMD-commands\src\Bat\Speed.bat (
+    echo ============================
+    echo [          SPEED           ] 
+    echo ----------------------------
+    echo Tool for check network speed
+    echo author: JOURLOY
+    echo command for launch: Speed
+    echo command for get help: Speed --help
+    echo command for download\update: Download --Speed
+)
