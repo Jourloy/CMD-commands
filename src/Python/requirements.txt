@@ -1,0 +1,3 @@
+hues
+speedtest-cli
+termcolor
