@@ -3,7 +3,7 @@ title Download JOURLOY's commands
 
 set param=%1
 
-if %param%=="--help" (
+if %param%==--help (
     echo Download any JOURLOY's tools
     echo ----------------------------
     echo Download --Update
@@ -31,41 +31,41 @@ if %param%=="--help" (
     echo (if you want update any tool, then redownload this tool)
     echo (press CTRL+C for exit)
     pause
-    C:\CMD-commands\src\Bat\Download.bat
+    C:\CMD-commands\src\Bat\Download.bat --help
 )
-if %param%=="--Update" (
+if %param%==--Update (
     echo -- Download update tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Update.bat > C:\CMD-commands\src\Bat\Update.bat
     echo -- Done
     pause
 )
-if %param%=="--Disable" (
+if %param%==--Disable (
     echo -- Download disable tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Disable.bat > C:\CMD-commands\src\Bat\Disable.bat
     echo -- Done
     pause
 )
-if %param%=="--Info" (
+if %param%==--Info (
     echo -- Download info tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/info.bat > C:\CMD-commands\src\Bat\Info.bat
     echo -- Done
     pause
 )
-if %param%=="--Password" (
+if %param%==--Password (
     echo -- Download password tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/password.bat > C:\CMD-commands\src\Bat\Password.bat
     echo -- Done
     pause
 )
-if %param%=="--Speed" (
+if %param%==--Speed (
     echo -- Download speed tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/speed.bat > C:\CMD-commands\src\Bat\Speed.bat
     echo -- Done
     pause
 )
-if %param%=="--test" ()
+if %param%==--test ()
