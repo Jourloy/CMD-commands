@@ -118,9 +118,3 @@ if %param%==--all (
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/setup.bat > C:\CMD-commands\src\Bat\Setup.bat
     echo -- Done
 ) 
-if %param%==--Download (
-    echo -- Download update
-    curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Download.bat > C:\CMD-commands\src\Bat\Download.bat
-    echo -- Open update file
-    C:\CMD-commands\src\Bat\Download.bat --help
-)
