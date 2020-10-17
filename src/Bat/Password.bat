@@ -8,4 +8,4 @@ set login=%2
 set site=%3
 set save=%4
 
-../Python/password.py %1 %2 %3 %4
+C:\CMD-commands\src\Python\password.py %1 %2 %3 %4
