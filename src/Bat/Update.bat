@@ -57,7 +57,7 @@ if %param%==--Disable (
 if %param%==--Info (
     echo -- Download info tool
     echo -- Author: JOURLOY
-    curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/info.bat > C:\CMD-commands\src\Bat\Info.bat
+    curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Info.bat > C:\CMD-commands\src\Bat\Info.bat
     echo -- Done
     pause
 )
