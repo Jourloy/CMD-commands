@@ -6,8 +6,9 @@ echo -- Made by JOURLOY
 
 echo -- Create folders
 MD C:\CMD-commands
-MD C:\CMD-commands\Bat
-MD C:\CMD-commands\Python
+MD C:\CMD-commands\src
+MD C:\CMD-commands\src\Bat
+MD C:\CMD-commands\src\Python
 
 echo -- Downloads files
 curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Update.bat > C:\CMD-commands\src\Bat\Update.bat
