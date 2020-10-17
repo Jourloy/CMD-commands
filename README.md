@@ -12,12 +12,14 @@ ____
 ____
 ## Info
 ![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/info.png)
+
 Данная команда выводит информацию о возможном использовании остальных команд
 
 Команда в CMD: `Info`
 ____
 ## Password
 ![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/password.png)
+
 Данная команда генерирует пароль и сохраняет его при необходимости
 
 Команда в CMD: `password count [login] [site] [save]`
@@ -38,6 +40,7 @@ ____
 ____
 ## Speed
 ![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/speed.png)
+
 Данная команда выводит текущую скорость интернета, а также сообщает чем пользователь сможет заняться, а чем не сможет
 
 Команда в CMD: `speed`
