@@ -6,29 +6,36 @@ import sys
 import hues
 import speedtest
 import urllib.request
+import platform
 from termcolor import colored
+
+def clear():
+    if (platform.system() == 'Windows'):
+        os.system('cls')
+    else:
+        os.system('clear')
 
 if __name__ == '__main__':
     mode = "full"
 
     if mode == "full":
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|              |")
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|█             |")
         servers = []
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|██            |")
         threads = None
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|███           |")
         try:
             s = speedtest.Speedtest()
-            os.system("clear")
+            clear()
             hues.info("Начинается сбор данных")
             hues.info("|████          |")
         except Exception as e:
@@ -37,7 +44,7 @@ if __name__ == '__main__':
             exit()
         try:
             s.get_servers(servers)
-            os.system("clear")
+            clear()
             hues.info("Начинается сбор данных")
             hues.info("|█████         |")
         except:
@@ -45,7 +52,7 @@ if __name__ == '__main__':
             exit()
         try:
             s.get_best_server()
-            os.system("clear")
+            clear()
             hues.info("Начинается сбор данных")
             hues.info("|██████        | (Ожидайте)")
         except:
@@ -53,34 +60,34 @@ if __name__ == '__main__':
             exit()
         try:
             s.download(threads=threads)
-            os.system("clear")
+            clear()
             hues.info("Начинается сбор данных")
             hues.info("|███████       |")
         except:
             hues.error("Загрузка прервана")
             exit()
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|█████████     |")
         results_dict = s.results.dict()
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|██████████    |")
         downloadSpeed = results_dict.get("download")
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|███████████   |")
         bits = downloadSpeed
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|████████████  |")
         b = bits/8
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|█████████████ |")
         Kb = b/1024
         downloadSpeed = Kb/1024
-        os.system("clear")
+        clear()
         hues.info("Начинается сбор данных")
         hues.info("|██████████████|")
         hues.success("Завершено")
