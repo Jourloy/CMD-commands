@@ -44,7 +44,7 @@ if __name__ == '__main__':
     for x in range(count):
         password += random.choice(
             list("1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"))
-    os.system("echo "+password)
+    os.system("echo Your password: "+password)
 
     if login != None or site != None:
         if save == True:
@@ -60,3 +60,4 @@ if __name__ == '__main__':
             userFile.write("Password: ")
             userFile.write(password)
             userFile.write("\n")
+            print("Password saved in file. Type 'MyPasswords' for open file");
