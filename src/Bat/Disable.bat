@@ -9,11 +9,15 @@ if %param%==--help (
     echo ----------------------------
     echo Tool for disable windows update and windows defender
     echo author: JOURLOY
-    echo command for launch: Disable
+    echo command for launch: Disable run
     echo command for get help: Disable --help
     echo command for download\update: Download --Disable
-) else (
-    echo -- Made by a JOURLOY
+    pause
+)
+if %param%==run (
+    echo ============================
+    echo [         DISABLE          ] 
+    echo ----------------------------
     echo -- Generate disable update bat file
     set "F="%ProgramFiles%\DisableUpdate.bat""
     echo @echo off>%F%
@@ -41,7 +45,6 @@ if %param%==--help (
 
     echo -- Run disable defender reg file
     regedit.exe /S "%ProgramFiles%\DisableDefender.reg"
-    rm "%ProgramFiles%\DisableDefender.reg"
     TIMEOUT /T 5 /NOBREAK
 
     shutdown /r
