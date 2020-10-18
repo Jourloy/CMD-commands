@@ -7,7 +7,7 @@ if EXIST C:\CMD-commands\src\Bat\Update.bat (
     echo ----------------------------
     echo Tool for update or download tools
     echo author: JOURLOY
-    echo command for launch: Update --all
+    echo command for launch: Update --[tool]
     echo command for get help: Update --help
     echo command for download\update: Download --Update
 )
@@ -17,7 +17,7 @@ if EXIST C:\CMD-commands\src\Bat\Disable.bat (
     echo ----------------------------
     echo Tool for disable windows update and windows defender
     echo author: JOURLOY
-    echo command for launch: Disable
+    echo command for launch: Disable run
     echo command for get help: Disable --help
     echo command for download\update: Download --Disable
 )
@@ -38,7 +38,7 @@ if EXIST C:\CMD-commands\src\Bat\Speed.bat (
     echo ----------------------------
     echo Tool for check network speed
     echo author: JOURLOY
-    echo command for launch: Speed
+    echo command for launch: Speed run
     echo command for get help: Speed --help
     echo command for download\update: Download --Speed
 )
