@@ -24,7 +24,6 @@ if %count%==--help (
     echo ----------------------------
     echo author: JOURLOY
     set done=true
-    pause
 )
 if %count%==--show (
     echo -- Made by JOURLOY
@@ -37,5 +36,4 @@ if not %done%==true (
     echo ----------------------------
     python C:\CMD-commands\src\Python\password.py %1 %2 %3
     echo ----------------------------
-    pause
 )
