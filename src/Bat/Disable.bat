@@ -12,7 +12,6 @@ if %param%==--help (
     echo command for launch: Disable run
     echo command for get help: Disable --help
     echo command for download\update: Download --Disable
-    pause
 )
 if %param%==run (
     echo ============================
