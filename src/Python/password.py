@@ -50,4 +50,4 @@ if __name__ == '__main__':
         userFile.write("Password: ")
         userFile.write(password)
         userFile.write("\n")
-        print("Password saved in file. Type 'Password --show' for open file")
+        print("Password saved in file. Type 'MyPasswords' for open file")
