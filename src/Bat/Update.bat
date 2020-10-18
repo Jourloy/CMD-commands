@@ -38,28 +38,24 @@ if %param%==--help (
     echo ----------------------------
     
     echo (if you want update any tool, then redownload this tool)
-    pause
 )
 if %param%==--Update (
     echo -- Download update tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Update.bat > C:\CMD-commands\src\Bat\Update.bat
     echo -- Done
-    pause
 )
 if %param%==--Disable (
     echo -- Download disable tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Disable.bat > C:\CMD-commands\src\Bat\Disable.bat
     echo -- Done
-    pause
 )
 if %param%==--Info (
     echo -- Download info tool
     echo -- Author: JOURLOY
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Info.bat > C:\CMD-commands\src\Bat\Info.bat
     echo -- Done
-    pause
 )
 if %param%==--Password (
     echo -- Download password tool
@@ -69,7 +65,6 @@ if %param%==--Password (
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Python/password.py > C:\CMD-commands\src\Python\password.py
     pip3 install -r C:\CMD-commands\src\Python\requirements.txt
     echo -- Done
-    pause
 )
 if %param%==--Speed (
     echo -- Download speed tool
@@ -79,5 +74,4 @@ if %param%==--Speed (
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Python/speed.py > C:\CMD-commands\src\Python\speed.py
     pip3 install -r C:\CMD-commands\src\Python\requirements.txt
     echo -- Done
-    pause
 )
