@@ -1,0 +1,1 @@
+setx /M path "%path%;C:\CMD-commands\src\Bat"
