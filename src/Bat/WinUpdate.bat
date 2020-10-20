@@ -1,6 +1,6 @@
 @echo off
 
-title Disable Windows Defender
+title Disable Windows Update
 
 set param=%1
 
@@ -21,7 +21,7 @@ if %param%==run (
     echo ----------------------------
     echo -- Generate disable update bat file
     set "F="%ProgramFiles%\DisableUpdate.bat""
-    echo @echo off>%F%
+    echo @echo off>>%F%
     echo net stop wuauserv>>%F%
     echo net stop bits>>%F%
     echo net stop dosvc>>%F%
