@@ -9,34 +9,9 @@ if %param%==--help (
     echo ----------------------------
     echo Tool for update or download tools
     echo author: JOURLOY
-    echo ----------------------------
-    echo Download --Update
-    echo Tool for update tools and download new tools
-    echo Last update 17.10.2020
-    echo ----------------------------
-    echo Download --Disable
-    echo Tool for off Windows update and Windows defender
-    echo Last update 16.10.2020
-    echo ----------------------------
-    echo Download --Info
-    echo Tool for print information about commands
-    echo Last update 16.10.2020
-    echo ----------------------------
-    echo Download --Password
-    echo Tool for generate and save passwords
-    echo Last update 16.10.2020
-    echo [Python3.8+ need]
-    echo ----------------------------
-    echo Download --Speed
-    echo Tool for check network speed
-    echo Last update 16.10.2020
-    echo [Python3.8+ need]
-    echo ----------------------------
-    echo Download --Setup
-    echo Tool for setup tools
-    echo Last update 16.10.2020
-    echo ----------------------------
-    
+    echo command for launch: Update --[tool]
+    echo command for get help: Update --help
+    echo command for download\update: Download --Update
     echo (if you want update any tool, then redownload this tool)
 )
 if %param%==--Update (
@@ -45,10 +20,16 @@ if %param%==--Update (
     curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Update.bat > C:\CMD-commands\src\Bat\Update.bat
     echo -- Done
 )
-if %param%==--Disable (
-    echo -- Download disable tool
+if %param%==--WinDefender (
+    echo -- Download disable windows defender tool
     echo -- Author: JOURLOY
-    curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Disable.bat > C:\CMD-commands\src\Bat\Disable.bat
+    curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/WinDefender.bat > C:\CMD-commands\src\Bat\WinDefender.bat
+    echo -- Done
+)
+if %param%==--WinUpdate (
+    echo -- Download disable windows update tool
+    echo -- Author: JOURLOY
+    curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/WinUpdate.bat > C:\CMD-commands\src\Bat\WinUpdate.bat
     echo -- Done
 )
 if %param%==--Info (
