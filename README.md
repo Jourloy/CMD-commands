@@ -1,85 +1,82 @@
-### Требования для работы:
+### Required:
 1. [Python 3.8+](https://www.python.org/downloads/)
 2. Windows 10
 ____
-### Установка (метод 1):
-1. Откройте CMD
-2. Перейдите в любую удобную для вас папку
-3. Введите `curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Install.bat >> install.bat`
-4. Появится файл **install.bat**. Запустите его от имени администратора
-5. Удалите **install.bat**
+### Install (1 method):
+1. Open CMD
+2. Type `curl -L https://raw.githubusercontent.com/Jourloy/CMD-commands/master/src/Bat/Install.bat >> install.bat`
+3. Appear **install.bat**. Run it with administrator rights
+4. Remove **install.bat**
 ____
-### Установка (метод 2):
-1. Скачайте репозиторий в ZIP архиве
-2. Распакуйте ZIP архив на диск **C:**!
-3. Переименуйте папку, чтобы название получилось **CMD-commands**
-4. Откройте папку по пути **C:\CMD-commands\src\Bat**
-5. Запустите от имени администратора файл **Setup.bat**
-6. Откройте терминал и введите **Info**, чтобы получить описание команд
+### Install (2 method):
+1. Downlooad repository in ZIP archieve
+2. Unpack ZIP archieve on a disk **C:**!
+3. Rename folder on **CMD-commands**
+4. Open folder with path: **C:\CMD-commands\src\Bat**
+5. Run **Setup.bat** with administrator rights
+6. Open CMD and type **Info** for get information about tools
 ____
 ## Info
 ![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/info.png)
 
-Данная команда выводит информацию о возможном использовании остальных команд
+Print information about all tools
 
-Значение | Команда в CMD
+Result | Command
 ------------ | -------------
-Запуск | Info
-Помощь | Отсутствует
-Загрузка/Обновление | Update --Info
+Run | Info
+Help | Отсутствует
+Donwload/Update | Update --Info
 ____
 ## Password
 ![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/password.png)
 
-Данная команда генерирует пароль и сохраняет его при необходимости
+Generate password and save (optional)
 
-Команда в CMD: `Password count [login] [site]`
+Params:
+* **COUNT** - Amount symbols in password
+* **LOGIN** - Login on site (Required if you want save)
+* **SITE** - Site (Required if you want save)
 
-Параметры:
-* **COUNT** - Укажите количество символов для пароля
-* **LOGIN** - Укажите логин, для которого генерируется пароль (обязательно только при сохранении)
-* **SITE** - Укажите логин, для которого генерируется пароль (обязательно только при сохранении)
-
-Значение | Команда в CMD
+Result | Command
 ------------ | -------------
-Запуск | password [count]
-Запуск с сохранением пароля | Password count [login] [site]
-Помощь | Password --help
-Загрузка/Обновление | Update --Password
+Run | password [count]
+Run and save password | Password count [login] [site]
+Help | Password --help
+Donwload/Update | Update --Password
 ____
 ## Speed
 ![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/speed.png)
 
-Данная команда выводит текущую скорость интернета, а также сообщает чем пользователь сможет заняться, а чем не сможет
+Print network speed and information what you can do
 
-Значение | Команда в CMD
+Result | Command
 ------------ | -------------
-Запуск | Speed run
-Помощь | Speed --help
-Загрузка/Обновление | Update --Speed
+Run | Speed run
+Help | Speed --help
+Donwload/Update | Update --Speed
 ____
 ## WinDefender
 
-Данная команда выключает Windows Defender. Будет создан файл в папке ProgramFiles, его удалять нельзя.
+Disable windows defender. Will be create file in ProgramFiles, this file can not be deleted
 
-**Обратите внимание, что это _небезопасно_ и может привести к _последствиям_, такие как _взлом компьютера_ или _заражение вирусами_.**
+**WARNING** | This is **unsafe**
 
-Значение | Команда в CMD
+Result | Command
 ------------ | -------------
-Запуск | WinDefender run
-Помощь | WinDefender --help
-Загрузка/Обновление | Update --WinDefender
+Run | WinDefender run
+Help | WinDefender --help
+Donwload/Update | Update --WinDefender
 ____
 ## WinUpdate
 
 ![alt-текст](https://github.com/Jourloy/CMD-commands/blob/master/photo/winupdate.png)
 
-Данная команда выключает обновления Windows, а также Windows дефендер. Будут созданы два файла в папке ProgramFiles, их удалять нельзя.
+Disable windows update
 
-**Обратите внимание, что это _небезопасно_ и может привести к _последствиям_, такие как _взлом компьютера_ или _заражение вирусами_.**
+**WARNING** | This is **unsafe**
 
-Значение | Команда в CMD
+Result | Command
 ------------ | -------------
-Запуск | WinUpdate run
-Помощь | WinUpdate --help
-Загрузка/Обновление | Update --WinUpdate
+Run | WinUpdate run
+Help | WinUpdate --help
+Donwload/Update | Update --WinUpdate
